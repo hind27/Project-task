@@ -228,17 +228,19 @@ a:focus {
 
 /* for mobile and  */
 @media only screen and (max-width: 991.5px) {
-  .sidebar li a:hover {
-    width: 100%;
-  }
+  /* .sidebar li a:hover {
+   
+  } */
 
 .sidebar {
-    width: 60%;
+    width: 70%;
   }
 .sidebar li a i {
-     justify-items: start;
+     position: relative;
+     right: 30%;
     font-size :24px
 }
+
 .sidebar li a span {
   visibility: hidden;
   float: left;
@@ -360,7 +362,7 @@ a:focus {
 .card-title{
   background-color: #DFDFDF;
   border-radius: 30px;
-  width: 15%;
+
   text-align: center;
   position: absolute;
   top: 0;
