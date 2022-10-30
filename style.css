@@ -126,19 +126,21 @@ a:focus {
   background-color: #E8E8E8;
   transition: all 0.5s ease-in-out;
   height: 499px;
-  border-radius: 15px 50px 30px 5px; 
+  border-radius:  20px 20px ; 
 }
-
+/* 
 .bg-defoult {
   background-color: #E8E8E8;
-  border-radius: 15px 50px 30px 5px; 
-}
+  border-radius:  20px 20px ; 
+} */
 
 .sidebar ul {
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 10px;
+  padding: 5px;
+  
 }
+
 
 .sidebar li a,
 .sidebar li a.collapsed.active {
@@ -158,22 +160,22 @@ a:focus {
   transition: all 0.5s ease-in-out
 }
 
-.sidebar li a:hover ,.bg-defoult a:hover {
-  width:100%;
+.sidebar li a:hover {
+  width:100%; 
   background-color: var(--main-color) !important;
- 
- border-top-right-radius:25%;
-
- border-bottom-right-radius: 25%;
+  border-radius:  0px  20px 20px 0px ; 
+  height:100%;
+ /* border-top-right-radius:25%;
+ height: 100%;
+ border-bottom-right-radius: 25%; */
 }
+
 .sidebar li a:hover:before {
   content: "";
   position: absolute;
   border-top-left-radius: 10px;  /* 100px of height + 10px of border */
   border-top-right-radius: 10px; /* 100px of height + 10px of border */
   background-color: red;
- 
- 
 }
 
 .sidebar li a i {
@@ -223,7 +225,11 @@ a:focus {
   transition: all 0.5s ease-in-out
 }
 
-
+/* for mobile and  */
+@media only screen and (max-width: 991.5px) {
+ 
+  
+}
 
 
 /*task*/
