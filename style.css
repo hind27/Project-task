@@ -122,10 +122,10 @@ a:focus {
 
 /* side Menu */
 .sidebar {
-  width: 350px;
   background-color: #E8E8E8;
   transition: all 0.5s ease-in-out;
-  height: 499px;
+  width: 70%;
+  height: 60vh;;
   border-radius:  20px 20px ; 
 }
 /* 
@@ -136,8 +136,10 @@ a:focus {
 
 .sidebar ul {
   list-style: none;
-  margin: 10px;
-  padding: 5px;
+  margin: 0;
+  padding: 0px;
+  font-weight: 600;
+
   
 }
 
@@ -151,23 +153,22 @@ a:focus {
   line-height:40px;  
 	width:100%;
 	transition:all .3s;
-	padding:10px;
+	padding: 10px;
+  margin: 20px;
 }
 
-.sidebar li a.active {
+/* .sidebar li a.active {
   background-color: #000;
-  border-left: 5px solid #dedede;
-  transition: all 0.5s ease-in-out
-}
+  border-left: px solid #dedede;
+  transition: all 0.5s ease-in-out;
+  width: 100px;
+} */
 
 .sidebar li a:hover {
-  width:100%; 
+ 
   background-color: var(--main-color) !important;
   border-radius:  0px  20px 20px 0px ; 
-  height:100%;
- /* border-top-right-radius:25%;
- height: 100%;
- border-bottom-right-radius: 25%; */
+
 }
 
 .sidebar li a:hover:before {
@@ -227,15 +228,28 @@ a:focus {
 
 /* for mobile and  */
 @media only screen and (max-width: 991.5px) {
- 
+  .sidebar li a:hover {
+    width: 100%;
+  }
 
 .sidebar {
-    width: 50%;}
+    width: 60%;
+  }
 .sidebar li a i {
-     justify-content: center;
+     justify-items: start;
     font-size :24px
 }
+.sidebar li a span {
+  visibility: hidden;
+  float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+}
   
+.sidebar li a.active {
+ width: 100%;
+}
 }
 
 
