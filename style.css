@@ -30,7 +30,7 @@ a {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 3px 20px;
-  margin: 10px 15px;
+  margin: 15px 15px;
   color: #ffffff;
   text-align: center;
   border-radius: 20px;
@@ -40,6 +40,7 @@ a {
 .custom_nav-container .navbar-nav .nav-item.active .nav-link,
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
   background-color: #616161;
+  
 }
 
 a,
@@ -409,7 +410,7 @@ border:none!important;
 
 /* card */
 
-.badge{
+.settings{
   
   position: absolute;
   top: 3%;
@@ -418,7 +419,7 @@ border:none!important;
 }
 
 
-.badge i {
+.settings i {
   background-color: #000;
   width: 30px;
   height: 30px;
